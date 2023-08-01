@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
 }
-
 .background {
   background-image: url('/images/pic1.jpg');
   background-size: cover;
@@ -16,7 +15,6 @@
   background-color: rgb(248, 244, 244);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-
 #logo1 {
   font-size: 30px;
   /* font-weight: 600; */
@@ -26,7 +24,6 @@
 #ul {
   gap: 15px;
 }
-
 .content p {
   text-align: center;
   font-family: sans-serif;
@@ -58,7 +55,6 @@ h1 {
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 } */
-
 .content {
   display: flex;
   flex-direction: column;
@@ -73,10 +69,6 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-
-
-
-
 /* page2 page */
 
 body {
@@ -103,7 +95,6 @@ body {
   font-weight: 600;
 
 }
-
 .div1 {
   background-color: rgb(236, 155, 49);
   margin-top: 50px;
@@ -135,7 +126,6 @@ body {
   height: 40vh;
   border-radius: 30px;
 }
-
 .popup {
   position: absolute;
   top: 0;
