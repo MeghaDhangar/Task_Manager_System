@@ -6,8 +6,6 @@ const filter = document.getElementById("filter");
 filter.addEventListener("keyup", filterTasks);
  
 navLinks.forEach((link) =>{link.addEventListener("click",filterByStatus);});
-
-
 function populateTaskList() {
   const table = document.createElement("table");
   const tableHead = document.createElement("thead");
@@ -27,7 +25,6 @@ function populateTaskList() {
   updateStatusHeader.innerText="UpdateStatus";
   actionHeader.innerText = "Action";
   
-
   headerRow.appendChild(nameHeader);
   headerRow.appendChild(taskHeader);
   headerRow.appendChild(dateHeader);
@@ -42,7 +39,6 @@ function populateTaskList() {
   list.appendChild(table);
 
   // Retrieve the task data from localStorage
-
   const tasks = JSON.parse(localStorage.getItem("tasks"));
   if (val == "year") {
     sortByYear(tasks);
@@ -101,7 +97,6 @@ function populateTaskList() {
 }
 
 // DELETE FILTER
-
 function updateStatus(e) {
   const updateButton = e.target;
   const name = updateButton.getAttribute("data-name");
