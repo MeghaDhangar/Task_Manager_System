@@ -15,7 +15,7 @@ function populateTaskList() {
   const headerRow = document.createElement("tr");
   const nameHeader = document.createElement("th");
   const taskHeader = document.createElement("th");
-  const dateHeader = document.createElement("th");
+  const dateHeader = document.createElement("th");``
   const statusHeader = document.createElement("th");
   const updateStatusHeader= document.createElement("th");
   const actionHeader = document.createElement("th");
