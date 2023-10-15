@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-.background {
+/* .background {
   background-image: url('/images/pic1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,7 +17,6 @@
 }
 #logo1 {
   font-size: 30px;
-  /* font-weight: 600; */
   color: rgb(76, 155, 80);
 }
 
@@ -49,12 +48,6 @@ h1 {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
 }
-
-/* #home:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-} */
 .content {
   display: flex;
   flex-direction: column;
@@ -68,11 +61,89 @@ h1 {
   width: 100%;
   justify-content: center;
   align-items: center;
+} */
+
+.background {
+  background-image: url('/images/pic1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+}
+
+.navbar {
+  background-color: rgb(248, 244, 244);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#logo1 {
+  font-size: 30px;
+  color: rgb(76, 155, 80);
+}
+
+#ul {
+  gap: 15px;
+}
+
+.content p {
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: 75px; 
+  color: white;
+  transition-delay: 2s;
+}
+
+#home_btn {
+  font-size: 18px; 
+  margin: 5px 0;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 110px; 
+  border-radius: 5px;
+  background-color: rgb(117, 155, 99);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px; 
+}
+
+#main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px; 
+  }
+  
+  #home_btn {
+    font-size: 16px; 
+    width: 90px; 
+  }
+  
+  .content {
+    margin-top: 50px; 
+  }
 }
 /* page2 page */
 
 body {
-  /* font-family: 'Josefin Sans', sans-serif; */
+  
   font-family: 'Poppins', sans-serif;
 }
 
@@ -132,7 +203,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-color: rgba(0,0,0,0.8); */
   background-color: rgba(238, 248, 240, 0.8);
   color: rgb(224, 22, 22);
   display: none;
@@ -274,23 +344,19 @@ table {
   width: 100%;
   border-collapse: collapse;
   font-family: 'Poppins', sans-serif;
-  
-    box-shadow:
-    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-    0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12)
-  ;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+              0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+              0 12.5px 10px rgba(0, 0, 0, 0.06),
+              0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+              0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+              0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-th,td {
+th, td {
   padding: 8px;
   text-align: center;
   border-bottom: 1px solid #91bd9c;
   background-color: rgb(248, 244, 244);
-
 }
 
 button {
@@ -313,30 +379,29 @@ th {
 
 tr:nth-child(even) {
   background-color: #F9FAFC;
-
 }
-  .searchbar {
-    /* flex: 1; */
-    border: 3px solid rgb(61, 124, 69);
-    border-radius: 25px;
-    height: 44px;
-    margin: 5px 0;
-    width: 53%;
-  }
-  
-  .searchbar input {
-    width: 75%;
-    height: 30px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    background: transparent;
-    border:none;
-    outline: none;
-  }
-  i {
-    color: rgb(89, 145, 89);
-  }
 
+.searchbar {
+  border: 3px solid rgb(61, 124, 69);
+  border-radius: 25px;
+  height: 44px;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.searchbar input {
+  width: 75%;
+  height: 30px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+i {
+  color: rgb(89, 145, 89);
+}
 
 #addbtn {
   font-size: 20px;
@@ -358,8 +423,35 @@ tr:nth-child(even) {
 }
 
 #tbl {
-  height: 87vh;
+  height: auto; 
 }
+
+@media (max-width: 768px) {
+  .dropdown-toggle {
+    font-size: 16px; 
+    width: 70px; 
+    height: 35px; 
+  }
+
+  th {
+    font-size: 14px; 
+  }
+
+  .searchbar {
+    width: 100%; 
+  }
+  
+  .searchbar input {
+    width: 70%; 
+  }
+
+  #addbtn {
+    font-size: 16px; 
+    width: 70px; 
+    padding: 8px; 
+  }
+}
+
 
 /* MODAL BOX */
  h4{
