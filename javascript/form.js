@@ -17,13 +17,10 @@ function handleFormSubmit(event) {
 
   // Retrieve existing tasks from localStorage
   let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
-
   // Add the new task to the tasks array
   tasks.push(taskData);
-
   // Store the updated tasks in localStorage
   localStorage.setItem('tasks', JSON.stringify(tasks));
-
   // Clear the form inputs
   nameInput.value = '';
   dateInput.value = '';
