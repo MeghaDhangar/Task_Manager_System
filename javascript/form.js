@@ -11,7 +11,6 @@ function handleFormSubmit(event) {
   const date = dateInput.value;
   const task = taskInput.value;
   const status = statusInput.value;
-
   // Create an object with the task data
   const taskData = { name: name, task: task, date: date ,status: status};
 
