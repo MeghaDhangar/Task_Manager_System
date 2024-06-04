@@ -13,7 +13,6 @@ function handleFormSubmit(event) {
   const status = statusInput.value;
   // Create an object with the task data
   const taskData = { name: name, task: task, date: date ,status: status};
-
   // Retrieve existing tasks from localStorage
   let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
   // Add the new task to the tasks array
